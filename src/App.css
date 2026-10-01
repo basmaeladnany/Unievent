@@ -70,9 +70,21 @@ section.dark h2,section.dark h3,section.dark h4{color:#fff}
 .reveal.in{animation:revealUp .9s var(--ease) var(--d,0s) both}
 .reveal.zoom.in{animation-name:revealZoom}
 .reveal.left.in{animation-name:revealLeft}
+.reveal.right.in{animation-name:revealRight}
+.reveal.fade.in{animation-name:revealFade}
+.reveal.scale.in{animation-name:revealScale}
+.reveal.rotate.in{animation-name:revealRotate}
+.reveal.flip.in{animation-name:revealFlip}
+.reveal.slide.in{animation-name:revealSlide}
 @keyframes revealUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
 @keyframes revealZoom{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
 @keyframes revealLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+@keyframes revealRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+@keyframes revealFade{from{opacity:0}to{opacity:1}}
+@keyframes revealScale{from{opacity:0;transform:scale(.8) rotate(-3deg)}to{opacity:1;transform:none}}
+@keyframes revealRotate{from{opacity:0;transform:rotateY(-20deg) translateZ(-50px)}to{opacity:1;transform:none}}
+@keyframes revealFlip{from{opacity:0;transform:perspective(1000px) rotateX(-15deg)}to{opacity:1;transform:none}}
+@keyframes revealSlide{from{opacity:0;transform:translateX(-100%)}to{opacity:1;transform:none}}
 
 /* ---------- Titres de section ---------- */
 .section-head{text-align:center;max-width:640px;margin:0 auto clamp(32px,5vw,52px)}

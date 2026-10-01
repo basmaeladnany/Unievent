@@ -99,18 +99,72 @@ const FOOD_CHIPS = [
 ];
 
 const REVIEWS = [
-  { name: "فاطمة وأحمد", event: "عرس", text: "خدمة ماعليها! الفريق حولو عرسنا لذكرى ما ننساها. التزيين كان رائع والخدمة ممتازة.", rating: 5 },
-  { name: "سارة م.", event: "خطوبة", text: "احترافية واهتمام بالتفاصيل. الضيوف كانوا مبسوطين بجودة البوفيه وجمال الديكور.", rating: 5 },
-  { name: "كريم ب.", event: "عيد ميلاد", text: "كاترينغ ممتاز للمناسبة العائلية. الأكل كان لذيذ والناس كانوا محترمين.", rating: 4 },
-  { name: "نور الدين", event: "عرس", text: "تجربة رائعة من البداية للنهاية. كلشي كان منظم ومضبوط.", rating: 5 },
-  { name: "مريم وعمر", event: "عقيقة", text: "شكراً جزيلاً على العقيقة. كلشي كان على أحسن ما يرام.", rating: 5 },
-  { name: "ياسين", event: "حفلة", text: "خدمة ممتازة وأكل لذيذ. ننصح بهم بشدة.", rating: 5 },
-  { name: "زينب", event: "خطوبة", text: "الديكور كان جميل جداً والأكل كان لذيذ. شكراً لكم.", rating: 4 },
-  { name: "عبد الله", event: "عرس", text: "أفضل كاترينغ تعاملت معهم. كلشي كان مثالي.", rating: 5 },
-  { name: "خديجة", event: "عيد ميلاد", text: "تجربة رائعة. الأطفال كانوا مبسوطين والكل كان سعيد.", rating: 5 },
-  { name: "محمد", event: "حفلة تخرج", text: "خدمة محترفة واهتمام بالتفاصيل. شكراً لكم.", rating: 4 },
-  { name: "أمينة", event: "عرس", text: "كلشي كان على أحسن ما يرام. ننصح بهم.", rating: 5 },
-  { name: "حميد", event: "خطوبة", text: "تجربة ممتازة. سنعاود التعامل معهم.", rating: 5 },
+  {
+    name: "Unievent",
+    event: "عرس",
+    text: "Salam Mohammed, ana la mariée dyal lbareh. Merci bcp pour la décoration, kolchi kan zwin kif bghit. Hta dekhla dyal lbab kant ghzala. Jitek f d9i9a 90 w derti li dakchi zwin w m9ad w f lwe9t. Tbarkellah 3likom, à la prochaine inchallah.",
+    rating: 5,
+  },
+  {
+    name: "كريم الجمال",
+    event: "عرس",
+    text: "أتقدم إليكم بجزيل الشكر والامتنان على ما قدمتموه من تنظيم راقٍ وتنسيق احترافي في حفل زفافنا. لقد تركتم بصمتكم في كل تفصيلة، من ترتيب القاعة إلى الإضاءة والتعامل الراقي والاحترافي من كامل الفريق. شكراً لكم على تحويل لحظة العمر إلى ذكرى لا تنسى.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "عرس",
+    text: "تبارك الله عليك خدمتك ماشي واعرة، راه ما يمكنش! أقسم بالله أمحمد، من الحطة دالخبز إن شاء الله العرس مهم، نامبر وان بزاااف.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "سبوع",
+    text: "كان سبوع ديال الين كتر ما تخيلت والله، وكان كلشي فالمستوى: من الديكور، من التريتون، من السيرفيس... كلشي كان هائل. الله يرحم الوالدين على الوقفة لي وقفتي معايا.",
+    rating: 5,
+  },
+  {
+    name: "زبونة Unievent",
+    event: "عرس",
+    text: "Tbarekellah 3lik, ejbaatni la salle bzaf. L'éclairage rien à dire, les arrière-plans nadyin, la déco aussi. Wlah ila zedt freht fsh sheft la salle bhal hakak. Merci beaucoup, kolchi zwin.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "مناسبة",
+    text: "Ouiii Dahi, koulchi daz howa hadak tbarkellah. Makla ma3endna mangoulou, wlah ila tbarkellah.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "مناسبة",
+    text: "Salam Alikom khouya Mohamed. Tbarekllah 3likom, kolchi daz ahssan mn li kont kantkhyel. Vous êtes professionnels, khedma n9ia, très bonne présentation, la ponctualité Iwa9t hya Iwa9t. W l'imada9 bla mandwi, Ibnna w l'itqan. Ça sera pas la dernière fois li ghant3amlo m3akom inchallah.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "مناسبة",
+    text: "Salam si Mohamed, chokran bzaf 3la service kaml dyalkom o l'équipe kolha. Tbarklah 3lihom, kolchi zwin o mtqoun. Akid blm3awda inchallah f monasabatna jayin.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "مناسبة",
+    text: "Si Mohamed, chokran bzaf 3la lkhdma dyalkom. Dakchi kan 3la 7e9o o tri9o. Lah i3tik saha, inchallah nt3amlo mra khora.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "عرس",
+    text: "Salam si Dahi, dakchi daz top. UniEvent saraha service 3jebi bzaf o les plats ma3endi mangol, la mn bastilla la mn tagine, berkoukes w dessert. Kancharokom bzaaf.",
+    rating: 5,
+  },
+  {
+    name: "زبون Unievent",
+    event: "مناسبة",
+    text: "Dahi merci infiniment. 3la kolchi, l9efa dyalk maya, la décoration, kolchi kan ghezaal aktar mn li bghit. Lah ysehal 3lik w nchofok ahssen traiteur f lmaghrib.",
+    rating: 5,
+  },
 ];
 
 /* ==========================================================================
@@ -743,14 +797,14 @@ export default function App() {
       {/* ---------- AVIS ---------- */}
       <section id="reviews" className="alt">
         <div className="wrap">
-          <SectionHead ar="آراء العملاء" title="Ils nous ont fait confiance" text="Quelques retours de familles accompagnées par UniEvent." />
+          <SectionHead  title="Ils nous ont fait confiance" text="Quelques retours de familles accompagnées par UniEvent." />
           <Reveal className="reviews-slider">
             <button className="slider-btn" onClick={() => scrollReviews(-1)} aria-label="Précédent"><Icon name="left" size={20} /></button>
             <div className="reviews-track" ref={trackRef}>
               {REVIEWS.map((r, i) => (
                 <article key={i} className="review-card">
                   <div className="review-header">
-                    <div className="review-name ar">{r.name}</div>
+                    {/* <div className="review-name ar">{r.name}</div> */}
                     <div className="review-event ar">{r.event}</div>
                   </div>
                   <div className="review-rating" aria-label={`${r.rating} étoiles sur 5`}>
