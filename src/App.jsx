@@ -510,11 +510,11 @@ function Lightbox({ images, index, onIndex, onClose }) {
 }
 
 function QuoteForm() {
-  const [f, setF] = useState({ name: "", type: "Mariage", date: "", guests: "" });
+  const [f, setF] = useState({ name: "", type: "Mariage", date: "", guests: "", local: "" });
   const set = (k) => (e) => setF((o) => ({ ...o, [k]: e.target.value }));
   const send = (e) => {
     e.preventDefault();
-    const msg = `Bonjour UniEvent, je souhaite un devis.\nNom : ${f.name}\nÉvénement : ${f.type}\nDate : ${f.date || "à définir"}\nInvités : ${f.guests || "à définir"}`;
+    const msg = `Bonjour UniEvent, je souhaite un devis.\nNom : ${f.name}\nÉvénement : ${f.type}\nDate : ${f.date || "à définir"}\nInvités : ${f.guests || "à définir"}\nLieu : ${f.local || "à définir"}`;
     window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
   };
   return (
@@ -528,6 +528,7 @@ function QuoteForm() {
       </label>
       <label>Date prévue<input type="date" value={f.date} onChange={set("date")} /></label>
       <label>Nombre d'invités<input type="number" min="1" inputMode="numeric" value={f.guests} onChange={set("guests")} /></label>
+      <label>Lieu<input type="text" value={f.local} onChange={set("local")} placeholder="Salle, villa, adresse..." /></label>
       <button className="btn" type="submit">Envoyer sur WhatsApp</button>
     </Reveal>
   );
